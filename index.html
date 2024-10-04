@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Equation & DDA Algorithm Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Line Equation & DDA Algorithm Calculator</h1>
+        
+        <div class="input-section">
+            <label for="x1">X1: </label>
+            <input type="number" id="x1" placeholder="Enter X1">
+            
+            <label for="y1">Y1: </label>
+            <input type="number" id="y1" placeholder="Enter Y1">
+            
+            <label for="x2">X2: </label>
+            <input type="number" id="x2" placeholder="Enter X2">
+            
+            <label for="y2">Y2: </label>
+            <input type="number" id="y2" placeholder="Enter Y2">
+        </div>
+
+        <div class="button-section">
+            <button onclick="calculateBasicLine()">Basic Line Equation</button>
+            <button onclick="calculateDDA()">DDA Algorithm</button>
+            <button onclick="clearAll()">Clear</button>
+        </div>
+
+        <div class="output-section">
+            <table id="outputTable">
+                <!-- Table output will appear here -->
+            </table>
+        </div>
+
+        <div class="chart-section">
+            <canvas id="graphCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="algoritma.js"></script>
+</body>
+</html>
